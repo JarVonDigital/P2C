@@ -1,0 +1,32 @@
+@use 'variables' as *;
+
+.info-card {
+  background: $color-white;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba($color-primary, 0.08);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  min-width: 180px;
+  margin: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+.info-card.highlight {
+  background: $color-accent;
+  color: $color-white;
+  box-shadow: 0 4px 16px rgba($color-accent, 0.15);
+}
+.icon {
+  margin-bottom: 0.75rem;
+}
+.icon img {
+  width: 40px;
+  height: 40px;
+}
+h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+p {
+  margin: 0;
+  font-size: 0.95rem;
+} 

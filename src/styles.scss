@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: $color-bg;
+  color: $color-text;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }s
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}

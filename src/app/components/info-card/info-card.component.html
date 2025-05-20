@@ -1,0 +1,9 @@
+<div class="info-card" [class.highlight]="highlight">
+  @if (icon) {
+    <div class="icon">
+      <img [src]="icon" alt="icon" />
+    </div>
+  }
+  <h4>{{ title }}</h4>
+  <p>{{ content }}</p>
+</div> 

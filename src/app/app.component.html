@@ -1,2 +1,43 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<app-navbar></app-navbar>
+<app-hero></app-hero>
+<app-feature-blocks></app-feature-blocks>
+
+<app-section title="Why Choose Power2Clean?" subtitle="Professional pressure washing and trash removal services you can trust.">
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+    <app-info-card 
+      title="5,000&#43;" 
+      content="Satisfied Customers" 
+      [highlight]="true">
+    </app-info-card>
+    <app-info-card 
+      title="Eco-Friendly" 
+      content="Safe cleaning solutions &amp; responsible waste disposal">
+    </app-info-card>
+    <app-info-card 
+      title="Same-Day Service" 
+      content="Quick response for your urgent cleaning needs">
+    </app-info-card>
+  </div>
+</app-section>
+
+<app-section title="Our Services" subtitle="Comprehensive cleaning solutions for homes &amp; businesses">
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem;">
+    <app-info-card 
+      title="Pressure Washing" 
+      content="Driveways, decks, siding, &amp; more"
+      icon="https://img.icons8.com/fluency/48/high-pressure.png">
+    </app-info-card>
+    <app-info-card 
+      title="Trash Removal" 
+      content="Construction debris, yard waste, &amp; general junk"
+      icon="https://img.icons8.com/fluency/48/waste.png">
+    </app-info-card>
+    <app-info-card 
+      title="Commercial Services" 
+      content="Regular maintenance plans for businesses"
+      icon="https://img.icons8.com/fluency/48/commercial.png">
+    </app-info-card>
+  </div>
+</app-section>
+
+<app-footer></app-footer>
