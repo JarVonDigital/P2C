@@ -1,10 +1,13 @@
 @use 'variables' as *;
 
 .info-card {
+  display: flex;
+  align-items: center;
+  flex-direction:  column;;
   background: $color-white;
   border-radius: $border-radius;
   box-shadow: 0 2px 8px rgba($color-primary, 0.08);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
   text-align: center;
   min-width: 180px;
   margin: 0.5rem;
@@ -23,8 +26,8 @@
   height: 40px;
 }
 h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  margin: 0rem;
+  font-size: 1.5rem;
 }
 p {
   margin: 0;

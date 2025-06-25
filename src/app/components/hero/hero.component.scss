@@ -29,6 +29,18 @@
   max-width: 800px;
   max-height: 450px;
   padding: 0 1rem;
+
+  .sbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 12rem;
+      width: 12rem;
+      margin: 0 2rem;
+    }
+  }
 }
 
 .hero h1 {

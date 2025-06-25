@@ -1,0 +1,16 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+  <h2>Contact Us</h2>
+  <div class="name-group">
+    <input formControlName="firstName" type="text" placeholder="First Name" />
+    <input formControlName="lastName" type="text" placeholder="Last Name" />
+  </div>
+  <input formControlName="email" type="email" placeholder="Email" />
+  <input formControlName="phone" type="tel" placeholder="Phone Number" />
+  <select formControlName="service">
+    <option value="" disabled>Select a Service</option>
+    <option value="trash-removal">Trash Removal</option>
+    <option value="pressure-washing">Pressure Washing</option>
+    <option value="bulk-pickup">Bulk Pickup</option>
+  </select>
+  <button type="submit" [disabled]="contactForm.invalid">Send Message</button>
+</form>

@@ -6,6 +6,7 @@ import { FeatureBlocksComponent } from './components/feature-blocks/feature-bloc
 import { SectionComponent } from './components/section/section.component';
 import { InfoCardComponent } from './components/info-card/info-card.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   imports: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FeatureBlocksComponent,
     SectionComponent,
     InfoCardComponent,
-    FooterComponent
+    FooterComponent,
+    FormComponent
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,4 +25,10 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'Power2Clean';
+  images = [
+    'https://source.unsplash.com/random/800x600',
+    'https://source.unsplash.com/random/801x600',
+    'https://source.unsplash.com/random/802x600',
+    // Add more URLs here...
+  ];
 }
