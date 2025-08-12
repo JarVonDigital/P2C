@@ -63,18 +63,26 @@
 .footer-links {
   border-top: 1px solid rgba($color-white, 0.1);
   padding-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
   gap: 2rem;
-  max-width: $max-width-container;
   margin: 0 auto;
   text-align: left;
-  
-  h4 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: $color-accent;
+
+  div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    h4 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: $color-accent;
+    }
   }
+  
+
   
   a {
     color: $color-white;
@@ -123,6 +131,17 @@
   border-top: 1px solid rgba($color-white, 0.1);
   text-align: center;
   grid-column: 1 / -1;
+
+  a {
+    color: $color-accent;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-accent-dark;
+    }
+  }
   
   p {
     opacity: 0.7;
@@ -146,7 +165,7 @@
   }
   
   .footer-links {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
     gap: 2rem;
   }
