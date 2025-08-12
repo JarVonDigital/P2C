@@ -7,29 +7,34 @@
   width: 100%;
   z-index: 1000;
   display: flex;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  background: $color-white;
+  background: rgba(255,255,255,.8);
+  backdrop-filter: blur(3rem);
   padding: 0.5rem 2rem;
   height: $navbar-height;
-}
-
-body {
-  padding-top: 72px;
+  border-bottom: 2px solid $color-primary;
 }
 
 .logo-container {
-  height: $navbar-height;
-  width: $navbar-height;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 6rem;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 3rem 0 0 0;
+  box-shadow: 0px 0px 20px -8px black;
+  border: 4px solid $color-primary;
+
 
   .logo {
     display: block;
     height: 100%;
-    padding: 0.25rem;
+    padding: .3rem;
+    background: white;
+    border-radius: $navbar-height;
+    overflow: hidden;
     
     img {
       height: 100%;
@@ -41,37 +46,23 @@ body {
 }
 
 .nav-links {
+  flex: 1;
   list-style: none;
   display: flex;
   gap: 2.5rem;
   margin: 0;
   padding: 0;
+  color: $color-primary;
+  font-weight: 600;
 }
 
 .nav-links a {
-  color: $color-text;
+  color: inherit;
   text-decoration: none;
-  font-weight: 500;
   transition: color 0.2s;
   
   &:hover {
     color: $color-primary;
-  }
-}
-
-.cta {
-  background: $color-accent;
-  color: $color-white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: $border-radius;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  
-  &:hover {
-    background: $color-accent-dark;
-    transform: translateY(-1px);
   }
 }
 

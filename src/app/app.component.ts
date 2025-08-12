@@ -17,18 +17,15 @@ import { FormComponent } from './components/form/form.component';
     SectionComponent,
     InfoCardComponent,
     FooterComponent,
-    FormComponent
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Power2Clean';
   images = [
     'https://source.unsplash.com/random/800x600',
     'https://source.unsplash.com/random/801x600',
     'https://source.unsplash.com/random/802x600',
-    // Add more URLs here...
   ];
 }
